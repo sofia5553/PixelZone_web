@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PixelZone — Каталог</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner container">
+            <div class="header-top">
+                <h1>Каталог игр PixelZone</h1>
+                <nav class="main-nav" aria-label="Главное меню">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html" class="active">Каталог</a>
+                    <a href="about.html">О проекте</a>
+                </nav>
+                <div id="cart-info" class="cart-info">
+                    Товаров в корзине: <span id="cart-count">0</span>
+                    <button id="clear-cart-btn" class="clear-cart-btn">Очистить корзину</button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="filters">
+                    <input type="text" id="search-input" placeholder="Я ищу..." aria-label="Поиск товаров">
+                    <label for="min-price-input" class="sr-only">Minimum price</label>
+                    <input type="number" id="min-price-input" placeholder="от 0 EUR" min="0" step="0.01" aria-label="Минимальная цена">
+                    <select id="category-filter" class="category-filter" aria-label="Фильтр по категории">
+                        <option value="All">Все категории</option>
+                        <option value="Action">Экшен</option>
+                        <option value="Adventure">Приключения</option>
+                        <option value="RPG">РПГ</option>
+                        <option value="Strategy">Стратегии</option>
+                        <option value="Sports">Спорт</option>
+                        <option value="Shooter">Шутеры</option>
+                        <option value="Horror">Хоррор</option>
+                        <option value="Simulation">Симуляторы</option>
+                        <option value="Survival">Выживание</option>
+                        <option value="Sandbox">Песочница</option>
+                        <option value="Visual Novella">Визуальные новеллы</option>
+                        <option value="Racing">Гонки</option>
+
+                    </select>
+                </div>
+                <div id="results-info" class="results-info" aria-live="polite"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="products-container" class="products-container"> </div>
+        </div>
+    </main>
+<footer>
+    <p> 2026. PixelZone. Все права защищены.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

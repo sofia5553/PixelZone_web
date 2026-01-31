@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PixelZone</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner container">
+            <div class="header-top">
+                <h1>PixelZone</h1>
+                <nav class="main-nav" aria-label="Главное меню">
+                    <a href="index.html" class="active">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                    <a href="about.html">О проекте</a>
+                </nav>
+                <div id="cart-info" class="cart-info">
+                    Товаров в корзине: <span id="cart-count">0</span>
+                    <button id="clear-cart-btn" class="clear-cart-btn">Очистить корзину</button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="hero">
+                    <h2>Добро пожаловать в PixelZone</h2>
+                    <p>Маленький каталог игр — практический проект по HTML, CSS и JavaScript. Просматривайте карточки, фильтруйте и добавляйте в корзину.</p>
+                    <p><a class="cta" href="catalog.html">Перейти в каталог</a></p>
+                </div>
+                <div id="results-info" class="results-info" aria-live="polite"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="featured-block">
+                <div class="featured-intro">
+                    <h2>Популярные игры</h2>
+                    <p>Яркая подборка интересных игр — небольшая демонстрация каталога. Нажмите на карточку, чтобы узнать больше или добавьте в корзину.</p>
+                </div>
+                <div id="featured-container" class="featured-container"></div>
+            </section>
+        </div>
+    </main>
+    
+
+
+
+<footer>
+    <p> 2026. PixelZone. Все права защищены.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
